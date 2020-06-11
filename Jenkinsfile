@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                
                 sh '/usr/share/maven/bin clean install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                
                 sh '/usr/share/maven/bin test'
             }
         }
